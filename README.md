@@ -1,2 +1,2 @@
-Angular-Inartec-Maquetacion
+Todas las practicas que emprenda con angularJs
 ===========================
