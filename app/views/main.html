@@ -1,0 +1,15 @@
+<md-content layout="row">
+  <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp">
+    <md-list>
+      <md-list-item ng-repeat="x in lista">
+        <md-button ng-click="selectUser(x); toggleSelect($index)" aria-label="ShowHideAccountant" ng-class="getClass($index)" style="width: 100%;">
+          <md-icon md-svg-src="images/icons/ic_person_24px.svg"></md-icon>
+          <span ng-bind="x.nombre"></span>
+        </md-button>
+      </md-list-item>
+    </md-list>
+  </md-sidenav>
+  <md-content class="md-padding" flex id="content">
+    <person-detail></person-detail>
+  </md-content>
+</md-content>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular Material</title>
+  <meta name="description" content="">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app="angularmaterialApp" ng-cloak>
+
+  <md-content>
+    <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+      <!-- <md-item class="inset"><a href="#/">Jennifer</a></md-item> -->
+      <md-nav-item md-nav-href="#/" name="Home">Personas</md-nav-item>
+      <md-nav-item md-nav-href="#/about" name="About">Formulario</md-nav-item>
+    </md-nav-bar>
+  </md-content>
+  <!-- <div class="ext-content">
+    El contenido externo para <span ng-if="currentNavItem">"{{currentNavItem}}"</span>
+  </div> -->
+
+  <div ng-view></div>
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <script src="bower_components/angular-material/angular-material.js"></script>
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/about.js"></script>
+  <script src="scripts/directives/persondetail.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
